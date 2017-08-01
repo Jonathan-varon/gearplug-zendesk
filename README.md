@@ -4,25 +4,25 @@ Este prototipo muestra la forma de hacer una integracion de la api de zendesk ut
 
 instalacion libreria
 
-pip install zenpy
+    pip install zenpy
 
 Ejemplo creds
 
- creds = {
+    creds = {
+        'email' : 'youremail',
+        'token' : 'yourtoken',
+        'subdomain': 'yoursubdomain', 
+
+     # An OAuth token
+      creds = {
+       "subdomain": "yoursubdomain",
+       "oauth_token": "youroathtoken"
+    }
+
+
+    # Or a password
+    creds = {
      'email' : 'youremail',
-     'token' : 'yourtoken',
-     'subdomain': 'yoursubdomain', 
-
- # An OAuth token
-   creds = {
-    "subdomain": "yoursubdomain",
-    "oauth_token": "youroathtoken"
- }
-
-
- # Or a password
-creds = {
- 'email' : 'youremail',
- 'password' : 'yourpassword',
- 'subdomain': 'yoursubdomain'
-}
+     'password' : 'yourpassword',
+     'subdomain': 'yoursubdomain'
+    }
