@@ -5,16 +5,16 @@ from zenpy.lib.api_objects import Ticket, User
 
 
 creds = {
-    'email' : 'jvaron.g@gmail.com',
-    'token' : 'N2p3KsA820tQhPahVBSaujq9MSRbbkKLBVw9tZB6',
-    'subdomain': 'grplug',
+    'email' : 'xxxxx.@gmail.com',
+    'token' : 'xxxxxxxxxxxxxxxxxxx',
+    'subdomain': 'subdomain',
 
 }
 
 def nuevo_ticket():
     zenpy_client = Zenpy(**creds)
-    zenpy_client.tickets.create(Ticket(subject="PROTOTIPO", description="prototipo", status="new"))
-    for ticket in zenpy_client.search("party", type='ticket', description="prototipo"):
+    zenpy_client.tickets.create(Ticket(subject="xxxxxxx", description="xxxxxxx", status="new"))
+    for ticket in zenpy_client.search("party", type='ticket', description="xxxxxxx"):
         print(ticket)
 
 
